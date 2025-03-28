@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Trip Updates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    label, select, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Driver Trip Updates</h1>
+  <form id="trip-form">
+    <label for="driver-name">Driver Name:</label>
+    <select id="driver-name" name="driver-name">
+      <option value="Fazal">Fazal</option>
+      <option value="Shahzeed">Shahzeed</option>
+      <option value="Naseeb">Naseeb</option>
+      <option value="Haseeb">Haseeb</option>
+    </select>
+
+    <label for="vehicle-number">Vehicle Number:</label>
+    <select id="vehicle-number" name="vehicle-number">
+      <option value="J-14377">J-14377</option>
+      <option value="BB-85990">BB-85990</option>
+      <option value="T-56436">T-56436</option>
+      <option value="Shj-1234">Shj-1234</option>
+    </select>
+
+    <label for="trip-details">Trip Details:</label>
+    <select id="trip-details" name="trip-details">
+      <option value="Site to Camp">Site to Camp</option>
+      <option value="Camp to Site">Camp to Site</option>
+      <option value="To Site">To Site</option>
+      <option value="To Camp">To Camp</option>
+    </select>
+
+    <label for="start-time">Start Time:</label>
+    <input type="time" id="start-time" name="start-time" required>
+
+    <label for="return-time">Return Time:</label>
+    <input type="time" id="return-time" name="return-time" required>
+
+    <label for="receipt">Upload Receipt:</label>
+    <input type="file" id="receipt" name="receipt" required>
+
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
